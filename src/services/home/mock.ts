@@ -1,6 +1,5 @@
-import { HttpStatusCode } from "axios";
-import { productList } from "./mock.data";
 import { axiosMockAdapter } from "@/axios-config-instance";
+import { mockProducts } from "@/services/home/mock.data";
+import { API_ROUTE_URL } from "@/shared/constant/apiRoute";
 
-// Of the code HttpStatusCode we need to define the enum for calling this one
-axiosMockAdapter.onGet("getallproduct").reply(HttpStatusCode.Ok, productList);
+axiosMockAdapter.onGet(API_ROUTE_URL.GET_ALL_PRODUCT).reply(200, mockProducts);

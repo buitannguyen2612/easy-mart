@@ -1,11 +1,62 @@
 import type { Product } from "@/models/home/interface";
 
-export const productList: Product[] = [
+export const mockProducts: Product[] = [
   {
-    id: "asdfj",
-    images: [],
-    price: 234,
-    productDescriptions: "no ",
-    productName: "no name",
+    id: "1b2c3d4e-5678-90ab-cdef-1234567890ab",
+    name: "Wireless Bluetooth Headphones",
+    description: "High-quality over-ear headphones with noise cancellation.",
+    base_price: 99.99,
+    sku: "WBH-001",
+    stock_quantity: 120,
+    category_id: "cat-001",
+    brand_id: "brand-001",
+    attributes: {
+      color: "Black",
+      battery_life: "20h",
+      wireless: true,
+    },
+    is_active: true,
+    created_at: "2025-10-03T10:00:00Z",
+    updated_at: "2025-10-03T10:00:00Z",
+    created_by: "user-001",
+  },
+  {
+    id: "2c3d4e5f-6789-01bc-def1-2345678901bc",
+    name: "Gaming Mouse",
+    description:
+      "Ergonomic gaming mouse with 7 programmable buttons and RGB lights.",
+    base_price: 49.99,
+    sku: "GM-101",
+    stock_quantity: 200,
+    category_id: "cat-002",
+    brand_id: "brand-002",
+    attributes: {
+      dpi: 16000,
+      color: "Black",
+      rgb: true,
+    },
+    is_active: true,
+    created_at: "2025-10-03T10:05:00Z",
+    updated_at: "2025-10-03T10:05:00Z",
+    created_by: "user-002",
+  },
+  {
+    id: "3d4e5f6g-7890-12cd-ef23-3456789012cd",
+    name: "Mechanical Keyboard",
+    description: "RGB backlit mechanical keyboard with blue switches.",
+    base_price: 79.99,
+    sku: "MK-305",
+    stock_quantity: 80,
+    category_id: "cat-002",
+    brand_id: "brand-003",
+    attributes: {
+      switch_type: "Blue",
+      key_count: 104,
+      rgb: true,
+    },
+    is_active: true,
+    created_at: "2025-10-03T10:10:00Z",
+    updated_at: "2025-10-03T10:10:00Z",
+    created_by: "user-003",
   },
 ];

@@ -1,11 +1,11 @@
 import type { Product } from "@/models/home/interface";
 import { productService } from "@/services/home";
 import { KEYS_QUERY } from "@/shared/constant";
-import { MESSAGE } from "@/shared/message";
+import { RESPONSE_MESSAGE } from "@/shared/message";
 import { useQuery, type UseQueryOptions } from "@tanstack/react-query";
 import type { AxiosError } from "axios";
 
-export const useProduct = (
+export const useProducs = (
   options?: Partial<
     UseQueryOptions<Product[], AxiosError<string>, Product[], KEYS_QUERY[]>
   >
@@ -14,9 +14,9 @@ export const useProduct = (
     queryKey: [KEYS_QUERY.GET_ALL_PRODUCT],
     queryFn: (context) => productService.getAllProduct(context),
     meta: {
-      errorMessage: MESSAGE.errorMessage,
+      errorMessage: RESPONSE_MESSAGE.ERROR_MESSAGE,
     },
-    enabled: false,
+    enabled: true,
     ...options,
   });
 
