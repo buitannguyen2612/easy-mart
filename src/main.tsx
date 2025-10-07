@@ -10,6 +10,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <QueryProvider>
       <CustomThemeProvider>
+        {/* <CssBaseline /> */}
         <RouterProvider router={mainRouterConfig} />
       </CustomThemeProvider>
     </QueryProvider>

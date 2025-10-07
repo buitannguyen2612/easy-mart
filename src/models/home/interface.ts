@@ -5,6 +5,8 @@ export interface Product {
   description: string;
   base_price: number; // decimal
   sku: string; // unique
+  images: string[];
+  thumbnail_url: string;
   stock_quantity: number;
   category_id: string; // FK
   brand_id: string; // FK
@@ -13,6 +15,9 @@ export interface Product {
   created_at: string; // timestamp
   updated_at: string; // timestamp
   created_by: string; // uuid (FK)
+  InventoryLog_list: InventoryLog[];
+  ProductView_list: ProductView[];
+  ProductReview_list: ProductReview[];
 }
 
 // ===================== INVENTORY_LOGS =====================
@@ -51,6 +56,7 @@ export interface Brand {
   logo_url: string;
   is_active: boolean;
   created_at: string;
+  product_list: Product[];
 }
 
 // ===================== CATEGORIES =====================
@@ -63,6 +69,7 @@ export interface Category {
   display_order: number;
   is_active: boolean;
   created_at: string;
+  product_list: Product[];
 }
 
 // ===================== PRODUCT_REVIEWS =====================
