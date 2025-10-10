@@ -1,16 +1,19 @@
 import type { Product } from "@/models/home/interface";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import {
   Box,
-  Button,
   Card,
   CardContent,
   CardMedia,
-  GlobalStyles,
+  IconButton,
+  Stack,
   Typography,
 } from "@mui/material";
 import Slider from "react-slick";
 import "/node_modules/slick-carousel/slick/slick-theme.css";
 import "/node_modules/slick-carousel/slick/slick.css";
+import { useState } from "react";
 
 const settings = {
   dots: false,
@@ -19,11 +22,14 @@ const settings = {
   slidesToShow: 4,
   slidesToScroll: 4,
 };
+
 type NewArivalProductCardProps = {
   productList?: Product[];
 };
 
 const NewArivalProductCard = ({ productList }: NewArivalProductCardProps) => {
+  const [sliderInstance, setSliderInstance] = useState<Slider | null>(null);
+
   return (
     <Box
       sx={{
@@ -42,29 +48,33 @@ const NewArivalProductCard = ({ productList }: NewArivalProductCardProps) => {
         }}
       >
         <Box>
-          <Typography variant="h5" fontWeight={600}>
+          <Typography variant="h4" fontWeight={600}>
             New Arrival Products
           </Typography>
           <Typography variant="body2" color="text.secondary">
             There are many variations passages
           </Typography>
         </Box>
-        <Button variant="outlined" size="small">
-          Show More
-        </Button>
+        <Stack direction={"row"} gap={1}>
+          <IconButton
+            aria-label="back"
+            size="large"
+            onClick={() => sliderInstance?.slickPrev()}
+          >
+            <KeyboardArrowLeftIcon fontSize="inherit" />
+          </IconButton>
+          <IconButton
+            aria-label="next"
+            size="large"
+            onClick={() => sliderInstance?.slickNext()}
+          >
+            <KeyboardArrowRightIcon fontSize="inherit" />
+          </IconButton>
+        </Stack>
       </Box>
 
-      {/* This is use for custom css for all of the DOM in this component */}
-      <GlobalStyles
-        styles={{
-          ".slick-list": {
-            padding: "1.25rem 0 !important",
-          },
-        }}
-      />
-
       {/* Product Grid */}
-      <Slider {...settings}>
+      <Slider ref={setSliderInstance} {...settings}>
         {productList?.slice(0, 8).map((val) => (
           <Box key={val.id} sx={{ px: 1 }}>
             <Card

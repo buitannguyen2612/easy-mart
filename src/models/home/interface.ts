@@ -39,7 +39,7 @@ export interface InventoryLog {
 export interface ProductView {
   id: string; // uuid
   product_id: string; // FK
-  user_id?: string | null; // nullable
+  user_id?: User[] | null; // nullable
   session_id: string;
   ip_address: string;
   user_agent: string;
@@ -87,4 +87,22 @@ export interface ProductReview {
   status: "Pending" | "Approved" | "Rejected";
   reviewed_at: string; // timestamp
   created_at: string; // timestamp
+  user?: User;
+}
+
+// ===================== USERS =====================
+export interface User {
+  id: string; // uuid
+  email: string;
+  password_hash: string;
+  first_name: string;
+  last_name: string;
+  phone_number: string;
+  preferences: Record<string, any>; // jsonb
+  is_email_verified: boolean;
+  is_active: boolean;
+  last_login_at: string; // timestamp
+  created_at: string; // timestamp
+  updated_at: string; // timestamp
+  product_reviews?: ProductReview[] | null;
 }

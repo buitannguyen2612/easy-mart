@@ -32,7 +32,7 @@ const BestSellCard = ({ productList }: BestSellCardProps) => {
         }}
       >
         <Box>
-          <Typography variant="h5" fontWeight={600}>
+          <Typography variant="h4" fontWeight={600}>
             Best Seller Products
           </Typography>
           <Typography variant="body2" color="text.secondary">
