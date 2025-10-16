@@ -1,8 +1,7 @@
-import { Button, Card, Stack, Typography } from "@mui/material";
+import CoreExploreButton from "@/@core/core-explore-button";
+import { Card, Stack, Typography } from "@mui/material";
 
-type Props = {};
-
-const BannerArival = (props: Props) => {
+const BannerArival = () => {
   return (
     <Card
       sx={{
@@ -29,7 +28,9 @@ const BannerArival = (props: Props) => {
         <Typography variant="h1" color="white">
           New product has been arrived
         </Typography>
-        <Button>Explore button</Button>
+
+        {/* Action button */}
+        <CoreExploreButton color="#fff" path={"#"} title="Shop Now" size={17} />
       </Stack>
     </Card>
   );

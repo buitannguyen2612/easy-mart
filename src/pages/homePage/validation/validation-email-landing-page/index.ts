@@ -1,11 +1,8 @@
+import type { EmailInput } from "@/models/home/interface";
 import { object, ObjectSchema, string, type AnyObject } from "yup";
 
-export interface emailInput {
-  email: string;
-}
-
 export const emailValidationSchema: ObjectSchema<
-  emailInput,
+  EmailInput,
   AnyObject,
   object,
   ""

@@ -1,4 +1,5 @@
-import type { ProductReview, User } from "@/models/home/interface";
+import { ENUM_REVIEW_STATUS } from "@/schema-model/enums";
+import type { ProductReview, User } from "@/schema-model/models";
 import { mockProducts } from "@/services/home/mock.data";
 
 // ===================== MOCK USERS =====================
@@ -95,7 +96,7 @@ export const mockProductReviews: ProductReview[] = [
     },
     helpful_count: 15,
     is_verified_purchase: true,
-    status: "Approved",
+    status: ENUM_REVIEW_STATUS.Approved,
     reviewed_at: "2025-09-22T08:30:00Z",
     created_at: "2025-09-21T10:00:00Z",
     user: mockUsers[0],
@@ -117,7 +118,7 @@ export const mockProductReviews: ProductReview[] = [
     },
     helpful_count: 8,
     is_verified_purchase: true,
-    status: "Approved",
+    status: ENUM_REVIEW_STATUS.Approved,
     reviewed_at: "2025-09-18T13:45:00Z",
     created_at: "2025-09-17T09:20:00Z",
     user: mockUsers[1],
@@ -134,7 +135,7 @@ export const mockProductReviews: ProductReview[] = [
     images: {},
     helpful_count: 3,
     is_verified_purchase: true,
-    status: "Approved",
+    status: ENUM_REVIEW_STATUS.Approved,
     reviewed_at: "2025-09-10T10:00:00Z",
     created_at: "2025-09-09T09:00:00Z",
     user: mockUsers[2],
@@ -153,7 +154,7 @@ export const mockProductReviews: ProductReview[] = [
     },
     helpful_count: 1,
     is_verified_purchase: false,
-    status: "Pending",
+    status: ENUM_REVIEW_STATUS.Approved,
     reviewed_at: "2025-09-25T15:00:00Z",
     created_at: "2025-09-24T14:00:00Z",
     user: mockUsers[3],
@@ -172,7 +173,7 @@ export const mockProductReviews: ProductReview[] = [
     },
     helpful_count: 24,
     is_verified_purchase: true,
-    status: "Approved",
+    status: ENUM_REVIEW_STATUS.Approved,
     reviewed_at: "2025-10-01T09:00:00Z",
     created_at: "2025-09-30T11:30:00Z",
     user: mockUsers[4],

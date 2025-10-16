@@ -1,19 +1,12 @@
-import type { Product } from "@/models/home/interface";
+import CoreCardProduct from "@/@core/core-card-product";
+import type { Product } from "@/schema-model/models";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  IconButton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
+import { useState } from "react";
 import Slider from "react-slick";
 import "/node_modules/slick-carousel/slick/slick-theme.css";
 import "/node_modules/slick-carousel/slick/slick.css";
-import { useState } from "react";
 
 const settings = {
   dots: false,
@@ -39,7 +32,7 @@ const NewArivalProductCard = ({ productList }: NewArivalProductCardProps) => {
         rowGap: 3,
       }}
     >
-      {/* Header */}
+      {/* Header and title*/}
       <Box
         sx={{
           display: "flex",
@@ -47,14 +40,17 @@ const NewArivalProductCard = ({ productList }: NewArivalProductCardProps) => {
           alignItems: "center",
         }}
       >
+        {/* Title */}
         <Box>
-          <Typography variant="h4" fontWeight={600}>
+          <Typography variant="h3" fontWeight={600}>
             New Arrival Products
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body1" color="text.secondary">
             There are many variations passages
           </Typography>
         </Box>
+
+        {/* Arrow button */}
         <Stack direction={"row"} gap={1}>
           <IconButton
             aria-label="back"
@@ -76,74 +72,9 @@ const NewArivalProductCard = ({ productList }: NewArivalProductCardProps) => {
       {/* Product Grid */}
       <Slider ref={setSliderInstance} {...settings}>
         {productList?.slice(0, 8).map((val) => (
+          // Card product with wrap element for more spacing of each element
           <Box key={val.id} sx={{ px: 1 }}>
-            <Card
-              sx={{
-                borderRadius: "1rem",
-                p: 1.5,
-                backgroundColor: "#fff",
-                boxShadow: "0px 1px 3px rgba(0,0,0,0.1)",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "stretch",
-              }}
-            >
-              {/* Image */}
-              <Box
-                sx={{
-                  width: "100%",
-                  height: 180,
-                  borderRadius: "0.625rem",
-                  backgroundColor: "#E0E0E0",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  overflow: "hidden",
-                  mb: 1.5,
-                  border: "0.125rem solid #2196F3",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image={val.thumbnail_url}
-                  alt={val.name}
-                  sx={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              </Box>
-
-              {/* Content */}
-              <CardContent sx={{ p: 0 }}>
-                <Typography
-                  variant="subtitle1"
-                  fontWeight={600}
-                  sx={{ mb: 0.5 }}
-                >
-                  {val.name}
-                </Typography>
-
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ mb: 1 }}
-                >
-                  3-seat sofa with chaise longue, Gunnared beigeasdfjasdlfkj
-                  3-seat sofa with chaise longue, Gunnared beigeasdfjasdlfkj
-                  3-seat sofa with chaise longue, Gunnared beigeasdfjasdlfkj
-                </Typography>
-
-                <Typography
-                  variant="subtitle1"
-                  fontWeight={700}
-                  sx={{ color: "#E49066" }}
-                >
-                  EGP {val.base_price.toLocaleString()}
-                </Typography>
-              </CardContent>
-            </Card>
+            <CoreCardProduct item={val} />
           </Box>
         ))}
       </Slider>

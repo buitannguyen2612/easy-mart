@@ -1,4 +1,4 @@
-import type { Brand, Category, Product } from "@/models/home/interface";
+import type { Brand, Category, Product } from "@/schema-model/models";
 
 // ===================== BRANDS =====================
 export const mockBrands: Brand[] = [

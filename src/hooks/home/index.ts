@@ -1,4 +1,4 @@
-import type { Product } from "@/models/home/interface";
+import type { Product } from "@/schema-model/models";
 import { productService } from "@/services/home";
 import { KEYS_QUERY } from "@/shared/constant";
 import { RESPONSE_MESSAGE } from "@/shared/message";

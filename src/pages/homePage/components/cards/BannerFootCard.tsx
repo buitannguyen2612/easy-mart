@@ -1,8 +1,7 @@
-import { Box, Button, Card, Stack, Typography } from "@mui/material";
+import CoreExploreButton from "@/@core/core-explore-button";
+import { Card, Stack, Typography } from "@mui/material";
 
-type Props = {};
-
-const BannerFootCard = (props: Props) => {
+const BannerFootCard = () => {
   return (
     <Stack flexDirection={"row"} justifyContent={"space-between"} height={300}>
       <Card
@@ -30,7 +29,13 @@ const BannerFootCard = (props: Props) => {
           <Typography variant="h1" color="#1F2937">
             New chair for your Life
           </Typography>
-          <Button>Explore button</Button>
+
+          {/* Action button */}
+          <CoreExploreButton
+            color="rgb(31, 41, 55)"
+            path={"#"}
+            title="Explore Now"
+          />
         </Stack>
       </Card>
       <Card
@@ -58,7 +63,9 @@ const BannerFootCard = (props: Props) => {
           <Typography variant="h1" color="white">
             Add Macbook over here
           </Typography>
-          <Button>Explore button</Button>
+
+          {/* Action button */}
+          <CoreExploreButton color="#fff" path={"#"} title="Explore Now" />
         </Stack>
       </Card>
     </Stack>

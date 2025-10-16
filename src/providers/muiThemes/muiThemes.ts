@@ -102,8 +102,8 @@ export const themeOptions: ThemeOptions = {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "9999px",
-          padding: "0.75rem 1.5rem",
+          borderRadius: "0.625rem",
+          padding: "0.2rem 1.2rem",
           fontSize: "1rem",
           transition: "all 0.3s ease",
           boxShadow: "0 4px 12px rgba(25,118,210,0.2)",

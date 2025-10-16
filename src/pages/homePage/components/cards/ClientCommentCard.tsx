@@ -15,7 +15,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import "/node_modules/slick-carousel/slick/slick-theme.css";
 import "/node_modules/slick-carousel/slick/slick.css";
-import type { ProductReview } from "@/models/home/interface";
+import type { ProductReview } from "@/schema-model/models";
 
 const settings = {
   dots: false,

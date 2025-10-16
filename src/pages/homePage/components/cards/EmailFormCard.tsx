@@ -1,3 +1,7 @@
+import type { EmailInput } from "@/models/home/interface";
+import { emailValidationSchema } from "@/pages/homePage/validation/validation-email-landing-page";
+import { DEFAULT_FORM_EMAIL } from "@/shared/default-form/emailForm";
+import { yupResolver } from "@hookform/resolvers/yup";
 import {
   Box,
   Button,
@@ -8,16 +12,8 @@ import {
   Typography,
 } from "@mui/material";
 import { Controller, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import {
-  emailValidationSchema,
-  type emailInput,
-} from "@/pages/homePage/validation/validation-email-landing-page";
-import { DEFAULT_FORM_EMAIL } from "@/shared/default-form/emailForm";
 
-type Props = {};
-
-const EmailFormCard = (props: Props) => {
+const EmailFormCard = () => {
   const {
     control,
     reset,
@@ -25,7 +21,7 @@ const EmailFormCard = (props: Props) => {
     clearErrors,
     handleSubmit,
     formState: { errors },
-  } = useForm<emailInput>({
+  } = useForm<EmailInput>({
     mode: "onChange",
     resolver: yupResolver(emailValidationSchema),
     defaultValues: DEFAULT_FORM_EMAIL,
