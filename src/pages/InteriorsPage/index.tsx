@@ -1,6 +1,10 @@
 import { useProducs } from "@/hooks/home";
-import HerosInteriorsCard from "@/pages/Interiors/components/cards/HerosInteriorsCard";
-import NewArrivalInteriorsCard from "@/pages/Interiors/components/cards/NewArrivalCard";
+import BentoSellupCard from "@/pages/InteriorsPage/components/cards/BentoSellupCard";
+import DoubleBannerCard from "@/pages/InteriorsPage/components/cards/DoubleBannerCard";
+import HerosInteriorsCard from "@/pages/InteriorsPage/components/cards/HerosInteriorsCard";
+import NewArrivalInteriorsCard from "@/pages/InteriorsPage/components/cards/NewArrivalCard";
+import TrendItemCard from "@/pages/InteriorsPage/components/cards/TrendItemCard";
+
 import { Box } from "@mui/material";
 
 type Props = {};
@@ -23,6 +27,9 @@ const InteriorPage = (props: Props) => {
     >
       <HerosInteriorsCard />
       <NewArrivalInteriorsCard productList={productLists} />
+      <DoubleBannerCard />
+      <TrendItemCard productList={productLists} />
+      <BentoSellupCard />
     </Box>
   );
 };

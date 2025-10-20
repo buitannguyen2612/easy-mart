@@ -1,15 +1,6 @@
-import CoreCardProduct from "@/@core/core-card-product";
+import CoreInteriorCardProduct from "@/@core/core-interior-card-product";
 import type { Product } from "@/schema-model/models";
 import { Box, Grid, Stack, Typography } from "@mui/material";
-import Slider from "react-slick";
-
-const settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-};
 
 type NewArrivalInteriorsCardProps = {
   productList?: Product[];
@@ -54,7 +45,7 @@ const NewArrivalInteriorsCard = ({
         }}
       >
         {productList?.slice(0, 8).map((val) => (
-          <CoreCardProduct key={val.id} item={val} isSale />
+          <CoreInteriorCardProduct key={val.id} item={val} />
         ))}
       </Grid>
     </Box>
