@@ -68,12 +68,12 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
-      "https://images.unsplash.com/photo-1519744346364-283efadd62c4?q=80&w=1200",
-      "https://images.unsplash.com/photo-1600180758890-6d0b5a35a08c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?q=80&w=2020&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-28T12:00:00Z",
     updated_at: "2025-10-02T15:30:00Z",
@@ -97,12 +97,12 @@ export const mockProducts: Product[] = [
       material: "Primeknit",
     },
     images: [
-      "https://images.unsplash.com/photo-1616469829935-c86187b7007b?q=80&w=1200",
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1200",
+      "https://images.unsplash.com/photo-1598300054673-3b4d63df03a1?q=80&w=1200",
+      "https://images.unsplash.com/photo-1586105251261-72a756497a12?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615873968403-89e7f9a7d23c?q=80&w=987&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-28T15:00:00Z",
     updated_at: "2025-10-02T15:30:00Z",
@@ -126,11 +126,11 @@ export const mockProducts: Product[] = [
       material: "Flyknit",
     },
     images: [
-      "https://images.unsplash.com/photo-1600180758890-6d0b5a35a08c?q=80&w=1200",
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1200",
+      "https://images.unsplash.com/photo-1595526114035-0e92e6f1f759?q=80&w=1200",
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://plus.unsplash.com/premium_photo-1681396658834-b56190480934?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600585154205-189b857bff10?q=80&w=987&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-29T10:00:00Z",
     updated_at: "2025-10-03T12:30:00Z",
@@ -155,11 +155,11 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600607687632-6f25d0c2f9ff?q=80&w=1200",
+      "https://images.unsplash.com/photo-1618221607926-19710187cb9c?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://images.unsplash.com/photo-1596558450268-9c27524ba856?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615873968403-89e7f9a7d23c?q=80&w=1925&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-30T09:00:00Z",
     updated_at: "2025-10-04T11:00:00Z",
@@ -184,11 +184,11 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://images.unsplash.com/photo-1605464315542-bda3e2f4e605?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-30T09:00:00Z",
     updated_at: "2025-10-04T11:00:00Z",
@@ -213,11 +213,11 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1595526114035-0e92e6f1f759?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://images.unsplash.com/photo-1596558450268-9c27524ba856?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1925&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-30T09:00:00Z",
     updated_at: "2025-10-04T11:00:00Z",
@@ -242,11 +242,11 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154205-189b857bff10?q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://plus.unsplash.com/premium_photo-1683531060718-4dd0a8f2a692?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=987&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-30T09:00:00Z",
     updated_at: "2025-10-04T11:00:00Z",
@@ -271,11 +271,11 @@ export const mockProducts: Product[] = [
       material: "Mesh",
     },
     images: [
-      "https://images.unsplash.com/photo-1606813902774-1b2b1a3e39b2?q=80&w=1200",
-      "https://images.unsplash.com/photo-1612817159949-195b6eb9f34c?q=80&w=1200",
+      "https://images.unsplash.com/photo-1598300054673-3b4d63df03a1?q=80&w=1200",
+      "https://images.unsplash.com/photo-1618221607926-19710187cb9c?q=80&w=1200",
     ],
     thumbnail_url:
-      "https://plus.unsplash.com/premium_photo-1681233751666-612c7bc77485?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2071&auto=format&fit=crop",
     is_active: true,
     created_at: "2025-09-30T09:00:00Z",
     updated_at: "2025-10-04T11:00:00Z",

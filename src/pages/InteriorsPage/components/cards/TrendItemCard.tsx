@@ -12,15 +12,15 @@ const settings = {
   dots: false,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 3,
+  slidesToScroll: 3,
 };
 
 type TrendItemCardProps = {
-  productList?: Product[];
+  productInteriors?: Product[];
 };
 
-const TrendItemCard = ({ productList }: TrendItemCardProps) => {
+const TrendItemCard = ({ productInteriors }: TrendItemCardProps) => {
   const [sliderInstance, setSliderInstance] = useState<Slider | null>(null);
 
   return (
@@ -71,7 +71,7 @@ const TrendItemCard = ({ productList }: TrendItemCardProps) => {
 
       {/* Product Grid */}
       <Slider ref={setSliderInstance} {...settings}>
-        {productList?.slice(0, 8).map((val) => (
+        {productInteriors?.slice(0, 8).map((val) => (
           // Card product with wrap element for more spacing of each element
           <Box key={val.id} sx={{ px: 1 }}>
             <CoreInteriorCardProduct key={val.id} item={val} />

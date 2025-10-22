@@ -3,11 +3,11 @@ import type { Product } from "@/schema-model/models";
 import { Box, Grid, Stack, Typography } from "@mui/material";
 
 type NewArrivalInteriorsCardProps = {
-  productList?: Product[];
+  productInteriors?: Product[];
 };
 
 const NewArrivalInteriorsCard = ({
-  productList,
+  productInteriors,
 }: NewArrivalInteriorsCardProps) => {
   return (
     <Box
@@ -44,7 +44,7 @@ const NewArrivalInteriorsCard = ({
           gap: 2,
         }}
       >
-        {productList?.slice(0, 8).map((val) => (
+        {productInteriors?.slice(0, 8).map((val) => (
           <CoreInteriorCardProduct key={val.id} item={val} />
         ))}
       </Grid>

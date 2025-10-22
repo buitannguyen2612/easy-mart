@@ -1,8 +1,9 @@
-import { useProducs } from "@/hooks/home";
+import { useInteriorProducts } from "@/hooks/products";
 import BentoSellupCard from "@/pages/InteriorsPage/components/cards/BentoSellupCard";
 import DoubleBannerCard from "@/pages/InteriorsPage/components/cards/DoubleBannerCard";
 import HerosInteriorsCard from "@/pages/InteriorsPage/components/cards/HerosInteriorsCard";
 import NewArrivalInteriorsCard from "@/pages/InteriorsPage/components/cards/NewArrivalCard";
+import TestimonialCard from "@/pages/InteriorsPage/components/cards/TestimonialCard";
 import TrendItemCard from "@/pages/InteriorsPage/components/cards/TrendItemCard";
 
 import { Box } from "@mui/material";
@@ -11,7 +12,7 @@ type Props = {};
 
 const InteriorPage = (props: Props) => {
   // ** Hooks
-  const { data: productLists, isLoading } = useProducs(); // this line must calling product list by interior variant
+  const { data: productInteriors, isLoading } = useInteriorProducts(); // this line must calling product list by interior variant
 
   if (isLoading) return <>Loading....</>;
 
@@ -22,14 +23,15 @@ const InteriorPage = (props: Props) => {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        gap: 8,
+        gap: 10,
       }}
     >
       <HerosInteriorsCard />
-      <NewArrivalInteriorsCard productList={productLists} />
+      <NewArrivalInteriorsCard productInteriors={productInteriors} />
       <DoubleBannerCard />
-      <TrendItemCard productList={productLists} />
+      <TrendItemCard productInteriors={productInteriors} />
       <BentoSellupCard />
+      <TestimonialCard />
     </Box>
   );
 };

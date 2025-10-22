@@ -1,72 +1,49 @@
-import CoreExploreButton from "@/@core/core-explore-button";
-import { Box, Card, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, colors, Stack, Typography } from "@mui/material";
 const cards = [
   {
-    gridArea: "1 / 1 / 25 / 4",
+    gridArea: "1 / 1 / 25 / 7",
     height: 550,
     imageUrl:
-      "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=987&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2069",
     title: "Latest iPhones",
-    descriptions:
-      "Upgrade to the newest iPhones with unbeatable deals and fast delivery.",
+    descriptions: "Upgrade to the ",
     path: "/phones",
-  },
-  {
-    gridArea: "1 / 4 / 25 / 7",
-    height: 550,
-    imageUrl:
-      "https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?q=80&w=987&auto=format&fit=crop",
-    title: "Cozy Interiors",
-    descriptions:
-      "Refresh your living space with modern furniture and smart home styles.",
-    path: "/interior",
   },
   {
     gridArea: "1 / 7 / 25 / 10",
     height: 550,
     imageUrl:
-      "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=927&auto=format&fit=crop",
-    title: "New Fashion Fits",
-    descriptions:
-      "Find your next favorite outfit from our trendy and comfy collections.",
+      "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2071",
+    title: "Offical Tables",
+    descriptions: "New arrivals",
+    path: "/interior",
+  },
+  {
+    gridArea: "25 / 1 / 49 / 3",
+    height: 550,
+    imageUrl:
+      "https://images.unsplash.com/photo-1684165610413-2401399e0e59?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1365",
+    title: "Sofa styles",
+    descriptions: "New arrivals",
     path: "/clothes",
   },
   {
-    gridArea: "25 / 1 / 49 / 4",
+    gridArea: "25 / 3 / 49 / 8",
     height: 550,
     imageUrl:
-      "https://images.unsplash.com/photo-1650751909769-f918d36bab92?q=80&w=987&auto=format&fit=crop",
-    title: "Step in Style",
-    descriptions:
-      "Discover shoes that blend comfort, quality, and the latest fashion trends.",
+      "https://images.unsplash.com/photo-1600867062551-60fca7e0b9c6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3271",
+    title: "More shining",
+    descriptions: "Lighting",
     path: "/shoes",
-  },
-  {
-    gridArea: "25 / 4 / 37 / 8",
-    imageUrl:
-      "https://images.unsplash.com/photo-1731432837390-36c15ab7ed8d?q=80&w=2071&auto=format&fit=crop",
-    title: "Home Essentials",
-    descriptions:
-      "Everything you need to make everyday living smarter, easier, and cleaner.",
-    path: "/home",
-  },
-  {
-    gridArea: "37 / 4 / 49 / 8",
-    imageUrl:
-      "https://images.unsplash.com/photo-1513185041617-8ab03f83d6c5?q=80&w=2070&auto=format&fit=crop",
-    title: "Top Reads",
-    descriptions:
-      "Explore bestsellers and inspiring books that spark creativity and learning.",
-    path: "/books",
+    color: "white",
   },
   {
     gridArea: "25 / 8 / 49 / 10",
     height: 550,
     imageUrl:
-      "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=988&auto=format&fit=crop",
-    title: "Beauty Picks",
-    descriptions:
-      "Shop skincare, makeup, and fragrances to keep your glow all day long.",
+      "https://images.unsplash.com/photo-1559051668-934cd674493c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1035",
+    title: "Big Sale",
+    descriptions: "Finding cheap price",
     path: "/beauty",
   },
 ];
@@ -101,7 +78,7 @@ const BentoSellupCard = () => {
             sx={{
               width: "100%",
               height: "100%",
-              backgroundColor: "rgba(0,0,0,0.6)",
+              backgroundColor: "rgba(0,0,0,0.001)",
               m: 0,
               p: 0,
             }}
@@ -110,19 +87,18 @@ const BentoSellupCard = () => {
             <Stack
               flexDirection="column"
               justifyContent="flex-start"
-              spacing={2}
+              alignItems={"center"}
               sx={{
-                width: "90%",
-                maxWidth: 350,
-                p: "40px 0 0 40px",
+                width: "100%",
+                p: "40px 0 0 0",
                 height: "100%",
                 overflow: "hidden",
               }}
             >
               <Typography
                 variant="h5"
-                color="white"
-                fontWeight={400}
+                fontWeight={600}
+                color={card.color && card.color}
                 sx={{ wordBreak: "break-word", overflowWrap: "anywhere" }}
               >
                 {card.descriptions}
@@ -130,19 +106,23 @@ const BentoSellupCard = () => {
 
               <Typography
                 variant="h2"
-                color="white"
                 lineHeight={1.1}
+                color={card.color && card.color}
                 sx={{ wordBreak: "break-word" }}
               >
                 {card.title}
               </Typography>
 
               {/* Action button */}
-              <CoreExploreButton
-                color="#fff"
-                path={card.path}
-                title="Explore Now"
-              />
+              <Button
+                sx={{
+                  backgroundColor: "#FA8C16",
+                  color: "white",
+                  mt: 2,
+                }}
+              >
+                Shop now
+              </Button>
             </Stack>
           </Box>
         </Card>
