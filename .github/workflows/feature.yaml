@@ -1,0 +1,23 @@
+name: Echo name
+
+'on':
+  push:
+    branches:
+      - feature/test-github-action
+
+jobs:
+  echo-name:
+    runs-on: self-hosted
+    environment: dev
+    env:
+      SSH_KEY: ${{ secrets.SSH_KEY }}
+      SERVER_NAME: ${{ vars.SERVER_NAME }}
+    steps:
+      - name: Print  dev configuration
+        run: |
+          if [ -n "$SSH_KEY" ]; then
+            echo 'SSH_KEY: configured'
+          else
+            echo 'SSH_KEY: missing'
+          fi
+          echo "SERVER_NAME: $SERVER_NAME"
