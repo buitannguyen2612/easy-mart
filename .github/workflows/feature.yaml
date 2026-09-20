@@ -1,0 +1,13 @@
+name: Echo name
+
+'on':
+  push:
+    branches:
+      - feature/test-github-action
+
+jobs:
+  echo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print name
+        run: echo 'Bùi Tấn Nguyên'
