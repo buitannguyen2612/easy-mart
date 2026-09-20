@@ -13,7 +13,7 @@ jobs:
       SSH_KEY: ${{ secrets.SSH_KEY }}
       SERVER_NAME: ${{ vars.SERVER_NAME }}
     steps:
-      - name: Print dev configuration
+      - name: Print  dev configuration
         run: |
           if [ -n "$SSH_KEY" ]; then
             echo 'SSH_KEY: configured'
