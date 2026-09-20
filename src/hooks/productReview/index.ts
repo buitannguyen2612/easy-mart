@@ -1,4 +1,4 @@
-import type { ProductReview } from "@/models/home/interface";
+import type { ProductReview } from "@/schema-model/models";
 import { productReviewService } from "@/services/products/productReview";
 import { KEYS_QUERY } from "@/shared/constant";
 import { RESPONSE_MESSAGE } from "@/shared/message";
@@ -13,7 +13,7 @@ export const useProductReview = (
       ProductReview[],
       KEYS_QUERY[]
     >
-  >
+  >,
 ) => {
   const query = useQuery({
     queryKey: [KEYS_QUERY.GET_ALL_PRODUCT_REVIEW],

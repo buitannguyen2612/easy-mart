@@ -33,9 +33,7 @@ const cards = [
   },
 ];
 
-type Props = {};
-
-const HerosInteriorsCard = (props: Props) => {
+const HerosInteriorsCard = () => {
   return (
     <Box
       sx={{

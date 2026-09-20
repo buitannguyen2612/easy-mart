@@ -8,9 +8,7 @@ import TrendItemCard from "@/pages/InteriorsPage/components/cards/TrendItemCard"
 
 import { Box } from "@mui/material";
 
-type Props = {};
-
-const InteriorPage = (props: Props) => {
+const InteriorPage = () => {
   // ** Hooks
   const { data: productInteriors, isLoading } = useInteriorProducts(); // this line must calling product list by interior variant
 

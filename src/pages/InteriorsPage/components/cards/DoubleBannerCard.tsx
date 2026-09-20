@@ -19,9 +19,7 @@ const listCardBanner = [
   },
 ];
 
-type Props = {};
-
-const DoubleBannerCard = (props: Props) => {
+const DoubleBannerCard = () => {
   return (
     <Stack
       height={380}

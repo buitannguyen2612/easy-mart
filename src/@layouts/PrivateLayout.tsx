@@ -11,11 +11,7 @@ const PrivateLayout = () => {
       {/* Header */}
 
       {/* Main body */}
-      <Container
-        maxWidth="lg"
-        component="main"
-        sx={{ flex: 1, py: 2, border: "solid black 1px" }}
-      >
+      <Container component="main" sx={{ flex: 1, py: 2 }}>
         <Outlet />
       </Container>
 

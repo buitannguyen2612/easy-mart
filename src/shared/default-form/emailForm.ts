@@ -1,5 +1,5 @@
-import type { emailInput } from "@/pages/homePage/validation/validation-email-landing-page";
+import type { EmailInput } from "@/models/home/interface";
 
-export const DEFAULT_FORM_EMAIL: emailInput = {
+export const DEFAULT_FORM_EMAIL: EmailInput = {
   email: "",
 };

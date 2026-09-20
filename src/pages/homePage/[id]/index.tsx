@@ -1,6 +1,4 @@
-type Props = {};
-
-const ProductDetails = (props: Props) => {
+const ProductDetails = () => {
   return <div>ProductDetails</div>;
 };
 

@@ -28,46 +28,55 @@ export const themeOptions: ThemeOptions = {
   },
 
   typography: {
-    fontFamily: `"Manrope", "Open Sans", "Arial", sans-serif`,
+    fontFamily: `"Poppins","Manrope","Open Sans","Arial",sans-serif`,
+
     h1: {
-      fontSize: "3rem",
+      fontSize: "3.5rem", // 56px hero headline
       fontWeight: 700,
-      letterSpacing: "-0.02em",
+      letterSpacing: "-0.025em",
+      lineHeight: 1.2,
       color: "#111827",
     },
     h2: {
-      fontSize: "2.25rem",
+      fontSize: "2.5rem", // 40px section titles
       fontWeight: 600,
+      letterSpacing: "-0.02em",
+      lineHeight: 1.25,
       color: "#111827",
     },
     h3: {
-      fontSize: "2rem",
+      fontSize: "1.75rem", // 28px
       fontWeight: 600,
+      lineHeight: 1.3,
       color: "#111827",
     },
     h4: {
-      fontSize: "1.3rem",
+      fontSize: "1.25rem",
       fontWeight: 600,
+      lineHeight: 1.35,
       color: "rgb(31, 41, 55)",
     },
     h5: {
-      fontSize: "1.02rem",
+      fontSize: "1.05rem",
       fontWeight: 600,
       color: "rgb(31, 41, 55)",
     },
+
     body1: {
       fontSize: "1rem",
-      lineHeight: 1.7,
+      lineHeight: 1.75, // more breathing space (important)
       color: "rgb(75, 85, 99)",
     },
     body2: {
       fontSize: "0.875rem",
+      lineHeight: 1.6,
       color: "#6b7280",
     },
+
     button: {
       textTransform: "none",
       fontWeight: 600,
-      letterSpacing: "0.02em",
+      letterSpacing: "0.01em",
     },
   },
 

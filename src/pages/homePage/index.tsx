@@ -9,9 +9,7 @@ import Heroscard from "@/pages/homePage/components/cards/Heroscard";
 import NewArivalProductCard from "@/pages/homePage/components/cards/NewArivalProductCard";
 import { Box } from "@mui/material";
 
-type HomePageProps = {};
-
-const HomePage = (props: HomePageProps) => {
+const HomePage = () => {
   // ** Hooks
   const { data: productLists, isLoading } = useProducs();
   const { data: productReviewLists, isLoading: productReviewLoading } =
@@ -44,4 +42,3 @@ const HomePage = (props: HomePageProps) => {
 };
 
 export default HomePage;
-  

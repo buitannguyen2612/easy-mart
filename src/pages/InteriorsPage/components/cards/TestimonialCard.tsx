@@ -15,9 +15,14 @@ import {
 import { deepPurple } from "@mui/material/colors";
 import { Controller, useForm } from "react-hook-form";
 
-type Props = {};
+type Props = {
+  id?: number;
+};
 
 const TestimonialCard = (props: Props) => {
+  const { id } = props;
+  console.log(id);
+
   const {
     control,
     reset,
@@ -31,12 +36,16 @@ const TestimonialCard = (props: Props) => {
     defaultValues: DEFAULT_FORM_EMAIL,
   });
 
+  console.log(errors);
+
+  console.log(reset, watch, clearErrors, handleSubmit);
+
   return (
     <Stack direction={"column"} alignItems={"center"} spacing={6}>
       {/* Title */}
       <Stack direction={"column"} alignItems={"center"}>
         <Typography variant="h3" fontWeight={600}>
-          Trending Items
+          Testimonial
         </Typography>
         <Typography variant="body1" color="text.secondary">
           There are many variations passages

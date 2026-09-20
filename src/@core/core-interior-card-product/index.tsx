@@ -1,12 +1,5 @@
 import type { Product } from "@/schema-model/models";
-import {
-  Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Box, CardContent, CardMedia, Rating, Typography } from "@mui/material";
 
 type CoreProductCardProps = {
   item: Product;

@@ -1,8 +1,5 @@
-type Props = {};
-
-const index = (props: Props) => {
+const index = () => {
   return <div>index</div>;
 };
 
 export default index;
-  

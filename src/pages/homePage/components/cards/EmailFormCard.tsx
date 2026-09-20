@@ -14,14 +14,7 @@ import {
 import { Controller, useForm } from "react-hook-form";
 
 const EmailFormCard = () => {
-  const {
-    control,
-    reset,
-    watch,
-    clearErrors,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<EmailInput>({
+  const { control } = useForm<EmailInput>({
     mode: "onChange",
     resolver: yupResolver(emailValidationSchema),
     defaultValues: DEFAULT_FORM_EMAIL,
