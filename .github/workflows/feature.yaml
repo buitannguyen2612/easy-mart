@@ -7,7 +7,7 @@ name: Echo name
 
 jobs:
   echo-name:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: dev
     env:
       SSH_KEY: ${{ secrets.SSH_KEY }}
